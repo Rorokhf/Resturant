@@ -17,6 +17,6 @@ class UsersController extends Controller
 
     public function profile()
     {
-        return view('Admin.users.profile');
+        return view('Admin.users.Profile');
     }
 }

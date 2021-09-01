@@ -23,22 +23,21 @@ Route::get('/', function () {
 
 
 
-Route::group(['prefix'=>'Admin'],function(){
-    Route::get('Home',[HomeController::class,'index'])->name('Home.admin');
-    Route::get('Menu',[HomeController::class,'menu'])->name('menu');
+Route::group(['prefix' => 'Admin'], function () {
+    Route::get('Home', [HomeController::class, 'index'])->name('Home.admin');
+    Route::get('Menu', [HomeController::class, 'menu'])->name('menu');
 
-    Route::resource('product',ProductController::class);
+    Route::resource('product', ProductController::class);
 
-    Route::group(['prefix'=>'Users'],function(){
-    Route::get('employee',[UsersController::class,'employee'])->name('employee');
-    Route::get('customer',[UsersController::class,'customer'])->name('customer');
-    Route::get('profile',[UsersController::class,'profile'])->name('profile');
+    Route::group(['prefix' => 'Users'], function () {
+        Route::get('employee', [UsersController::class, 'employee'])->name('employee');
+        Route::get('customer', [UsersController::class, 'customer'])->name('customer');
+        Route::get('profile', [UsersController::class, 'profile'])->name('profile');
     });
 
-    Route::group(['prefix'=>'traking'],function(){
-    Route::get('order',[TrakeController::class,'order'])->name('order');
-    Route::get('Reservation',[TrakeController::class,'Reservation'])->name('Reservation');
-    Route::get('calender',[TrakeController::class,'calender'])->name('calender');
-
+    Route::group(['prefix' => 'traking'], function () {
+        Route::get('order', [TrakeController::class, 'order'])->name('order');
+        Route::get('Reservation', [TrakeController::class, 'Reservation'])->name('Reservation');
+        Route::get('calender', [TrakeController::class, 'calender'])->name('calender');
     });
 });

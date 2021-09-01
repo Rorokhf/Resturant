@@ -16,6 +16,25 @@
     <!-- Chartist -->
     <link rel="stylesheet" href="{{asset('assets/plugins/chartist/css/chartist.min.css')}}">
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <!-- Bootstrap core CSS     -->
+    <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="{{url('css/animate.min.css')}}" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="{{url('css/light-bootstrap-dashboard.css')}}" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
     @yield('links')
 
 </head>
@@ -249,7 +268,7 @@
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-layers"></i><span class="nav-text">Users</span></a>
                         <ul aria-expanded="false">
                             <li><a href="{{route('profile')}}">Profile</a></li>
-                            <li><a href="{{route('customer')}}">Custommer</a></li>
+                            <li><a href="{{route('customer')}}">Users Data</a></li>
                             <li><a href="{{route('employee')}}">Empoloyee</a></li>
 
 
@@ -588,6 +607,23 @@
     <!-- Init files -->
     <script src="{{asset('js/plugins-init/fullcalendar-init.js')}}"></script>
     <script src="{{asset('js/dashboard/dashboard-1.js')}}"></script>
+    {{-- SAAD --}}
+    <!--   Core JS Files   -->
+    <script src="{{url('js/jquery.3.2.1.min.js')}}" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--  Charts Plugin -->
+    <script src="{{url('js/chartist.min.js')}}"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="{{url('js/bootstrap-notify.js')}}"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+    <script src="{{url('js/light-bootstrap-dashboard.js')}}"></script>
+    {{-- End Of Saad --}}
 
     @yield('scripts')
 </body>

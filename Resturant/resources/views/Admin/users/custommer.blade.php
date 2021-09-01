@@ -28,6 +28,7 @@
                                     <th>Adress</th>
                                     <th>status</th>
                                     <th>paid</th>
+                                    <th>Operation</th>
                                 </tr>
                         </thead>
                         <tbody>
@@ -39,7 +40,9 @@
                                 <td><span class="badge badge-primary">online</span>
                                 </td>
                                 <td>$320,800</td>
+                                <td><a href="" class="btn btn-primary">Edit</a><a href="" class="btn btn-danger">Delete</a> </td>
                             </tr>
+                            
 
                         </tbody>
                     </table>
