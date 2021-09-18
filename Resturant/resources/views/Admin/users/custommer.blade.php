@@ -28,6 +28,7 @@
                                     <th>Adress</th>
                                     <th>status</th>
                                     <th>paid</th>
+                                    <th>Action</th>
                                 </tr>
                         </thead>
                         <tbody>
@@ -39,6 +40,15 @@
                                 <td><span class="badge badge-primary">online</span>
                                 </td>
                                 <td>$320,800</td>
+                                <td>
+                                    <form method="post" action="">
+                                        @csrf
+                                        {{-- @method('DELETE') --}}
+                                      
+
+                                        <button type="submit" class="btn btn-outline-danger"> Delete </button>
+                                    </form>
+                                </td>
                             </tr>
 
                         </tbody>

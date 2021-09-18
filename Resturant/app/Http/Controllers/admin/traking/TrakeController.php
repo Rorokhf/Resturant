@@ -19,4 +19,7 @@ class TrakeController extends Controller
     {
         return view('Admin.traking.calender');
     }
+    public function addOrder(){
+        return view('Admin.traking.addOrder');
+    }
 }

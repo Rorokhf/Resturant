@@ -1,6 +1,6 @@
 @extends('Admin.layout.app')
 
-@section('links','Profile')
+@section('title','Profile')
 
 @section('links')
 
@@ -46,7 +46,7 @@
         <div class="col-md-3 border-right">
             <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQF2psCzfbB611rnUhxgMi-lc2oB78ykqDGYb4v83xQ1pAbhPiB&usqp=CAU"><span class="font-weight-bold">Amelly</span></div>
             <div class="col-4">
-               
+
                 <input type="file" name="image"><br>
 
 

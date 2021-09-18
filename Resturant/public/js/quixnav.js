@@ -16,7 +16,7 @@ let styleSettings;
 (function (_0x5a7602) {
     'use strict';
     styleSettings = new quixSettings({
-        'version':"dark",
+        'version':"light",
         'layout': 'vertical',
         'navheaderBg': _0x4c81('0x1'),
         'headerBg': _0x4c81('0x1'),

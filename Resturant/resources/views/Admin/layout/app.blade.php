@@ -238,7 +238,7 @@
                             <i class="icon-speedometer"></i><span class="nav-text">Products</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="{{route('product.index')}}"> Prroducts List</a></li>
+                            <li><a href="{{route('product.index')}}"> Products List</a></li>
                             <li><a href="{{route('product.create')}}">Add Product</a></li>
 
 
@@ -262,6 +262,7 @@
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i class="icon-screen-smartphone"></i><span class="nav-text">Traking</span></a>
                         <ul aria-expanded="false">
                             <li><a href="{{route('order')}}">Order</a></li>
+                            <li><a href="{{route('addOrder')}}">add Order</a></li>
                             <li><a href="{{route('Reservation')}}">Reservation</a></li>
                             <li><a href="{{route('calender')}}">Calendar</a></li>
                         </ul>

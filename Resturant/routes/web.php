@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wibsite.home.home');
 });
 
 
@@ -37,8 +37,10 @@ Route::group(['prefix'=>'Admin'],function(){
 
     Route::group(['prefix'=>'traking'],function(){
     Route::get('order',[TrakeController::class,'order'])->name('order');
+    Route::get('addOrder',[TrakeController::class,'addOrder'])->name('addOrder');
     Route::get('Reservation',[TrakeController::class,'Reservation'])->name('Reservation');
     Route::get('calender',[TrakeController::class,'calender'])->name('calender');
 
     });
 });
+
